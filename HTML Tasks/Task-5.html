@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Task-5</title>
+    <style>
+         form {
+            padding: 20px;
+            max-width: 400px; /* Adjust the width as needed */
+            margin: 0 auto; /* Center the form on the page */
+        }
+        center{
+            color: blue;
+            font-size: x-large;
+            font-weight: 700;
+        }
+        tr{
+            border: 2px solid black;
+        }
+        td{
+            border: 2px solid black;
+        }
+    </style>
+</head>
+<body>
+    <center>Registration Form</center>
+    <form action="submit_registration.php" method="post">
+        <table>
+            <tr>
+                <td><label for="full_name">Full Name:</label></td>
+                <td><input type="text" id="full_name" name="full_name" required></td>
+            </tr>
+            <tr>
+                <td><label for="username">Username:</label></td>
+                <td><input type="text" id="username" name="username" required></td>
+            </tr>
+            <tr>
+                <td><label for="password">Password:</label></td>
+                <td><input type="password" id="password" name="password" required></td>
+            </tr>
+            <tr>
+                <td><label for="re_password">Re-enter Password:</label></td>
+                <td><input type="password" id="re_password" name="re_password" required></td>
+            </tr>
+            <tr>
+                <td><label for="address">Address:</label></td>
+                <td><textarea id="address" name="address" required></textarea></td>
+            </tr>
+            <tr>
+                <td><label for="age">Age:</label></td>
+                <td><input type="number" id="age" name="age" required></td>
+            </tr>
+            <tr>
+                <td><label for="gender">Gender:</label></td>
+                <td>
+                    <select id="gender" name="gender" required>
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                        <option value="other">Other</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="state">State:</label></td>
+                <td><input type="text" id="state" name="state" required></td>
+            </tr>
+            <tr>
+                <td><label for="gender">Country:</label></td>
+                <td>
+                    <select id="gender" name="gender" required>
+                        <option value="male">Choose your country</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="languages">Languages Known:</label></td>
+                <td><input type="text" id="languages" name="languages" required></td>
+            </tr>
+            <tr>
+                <td><label for="agreement">Agreement:</label></td>
+                <td><input type="checkbox" id="agreement" name="agreement" required>
+                    <label for="agreement">Hereby I declare all the details are true.</label>
+                </td>
+            </tr>
+            <tr>
+                <td>Login to <a href="https://ethnus.com/">Ethnus</a> website.</td>
+            </tr>
+        </table>
+        <br>
+        <input type="submit" value="Register">
+    </form>
+</body>
+</html>
